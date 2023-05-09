@@ -20,23 +20,22 @@ This project is an automated trading system that leverages the power of AWS Lamb
 ## Installation
 
 1. Clone the repository:
+    git clone https://github.com/yourusername/automated-trading-system.git
+    cd automated-trading-system
 
-git clone https://github.com/yourusername/automated-trading-system.git
-cd automated-trading-system
+2. Install AWS Chalice:
+    pip install chalice
 
-Install AWS Chalice:
-pip install chalice
+3. Configure your AWS credentials and region:
+    aws configure
+    
+4. Install required dependencies:
+    pip install -r requirements.txt
 
-Configure your AWS credentials and region:
-aws configure
+5. Configure your trading platform API keys and other settings in config.json.
 
-Install required dependencies:
-pip install -r requirements.txt
-
-Configure your trading platform API keys and other settings in config.json.
-
-Deploy the Chalice application:
-chalice deploy
+ 6. Deploy the Chalice application:
+     chalice deploy
 
 Usage
 Set up your custom alerts in TradingView with the webhook URL provided by the Chalice deployment.
